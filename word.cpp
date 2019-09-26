@@ -1,6 +1,6 @@
 #include<iostream>
 #include <string>
-#include <conio.h>
+
 #include<cstdlib>
 #include<cstring>
 using namespace std;
@@ -12,20 +12,8 @@ int main()
     cout<<" Player 1: choose your word : " ;
     string word ="";
     char ch;
-    ch = _getch();
-     /* if(ch=='\b')
-        l=0;
-    else
-        l++;  */
-    while(ch != 13)
-    { //character 13 is for enter
-      word.push_back(ch);
-      cout << '*';
-      ch = _getch();
-      // if(ch=='\b')
-      //   l-- ;
-    }
-
+    cin>>word;
+    for(i=0;i<20;i++) cout<<endl;
     l= word.size();
     n=4*l;
     for(i=0;i<l;i++)
